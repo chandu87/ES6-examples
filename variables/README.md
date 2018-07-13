@@ -64,3 +64,13 @@ console.log(obj); // { i: 1 }
 # includes Array.includes and String.includes
 
 # array.findIndex and array.find
+
+# Spread operator
+- Used in function call
+```years[2010,2011,2012]
+apples(...years)```
+# rest parametor
+-userd in function declration to accept arguments as a array
+function apples(...years)
+-arguments variable in function by default is not an array but look like a array.
+In ES5 way you have to convert by using Array.prototype.slice.call(arguments)
