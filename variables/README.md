@@ -48,4 +48,6 @@ console.log(obj); // { i: 1 }
 
 - when you write arrow functions as methods in object or constructor. It dont have access to 'this' of that object. These arrow functions share lexical surrodings with the outer variables.(in this case also checks global variables)
 
-#
+# Destructuring
+- ES6 - const [name, age] = ['John', 26];
+ 
