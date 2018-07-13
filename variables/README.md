@@ -26,7 +26,26 @@ console.log(obj); // { i: 1 }
 # let/const Hoisting
 -let and const declarations are not hoisted!
 
+# Blocks and IIFEs
+- Block scope variables are not accessiable after block completion. This is same like IIFEs variables in ES5
 
+# Strings
+### template literals
+```
+.startsWith(string)
+.endsWith(string)
+.includes(string)
+"```${}```"
+.repeat(num)
+```
 
+# Arrow functions
+[defination from MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
+- Arrow function share the lexical surrounds of this keyword
 
+- when writing functions inside the methods. they dont have access to this keyword. they just check locally or in global variables. You can solve this by binding this to function inside method or use arrow functions which share lexical surroundings of this keyword
+
+- when you write arrow functions as methods in object or constructor. It dont have access to 'this' of that object. These arrow functions share lexical surrodings with the outer variables.(in this case also checks global variables)
+
+#
