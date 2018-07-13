@@ -51,3 +51,16 @@ console.log(obj); // { i: 1 }
 # Destructuring
 - ES6 - const [name, age] = ['John', 26];
  
+# Arrays
+- ES5 - Array.prototype.slice.call(nodeList)
+-ES6 - Array.from(nodeList)
+
+# Continue
+- skip the iteration and continue next loop iteration
+# break
+- break the loop
+
+## 'for' vs 'for of' loop
+# includes Array.includes and String.includes
+
+# array.findIndex and array.find
