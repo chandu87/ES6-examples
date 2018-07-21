@@ -45,9 +45,9 @@ class Streets extends Element{
 }
 
 const parks = [
-                new Parks("park1", 2016, 5, 1001),
-                new Parks("park2", 1987, 2, 523), 
-                new Parks("park3", 1990, 4, 943)
+                new Parks("bellhoj have", 2016, 5, 1001),
+                new Parks("kongens have", 1987, 2, 523), 
+                new Parks("varebroparken", 1990, 4, 943)
             ];
 const streets = [
                 new Streets("Bagsvard", 1999, 2, 3),
@@ -66,6 +66,10 @@ function parksReport(parks){
     const ages = parks.map(park => 2018 - park.buildYear);
     const[sumOfAges, avgAge] = calculateAvg(ages);
     console.log(`Our ${parks.length} parks have an averge of ${avgAge}`);
+//Morethan thousand trees
+const treesMoreThanThousand = parks.map(park => park.numberOfTrees).findIndex(el => el >= 1000);
+console.log(`${parks[treesMoreThanThousand].name} park has more than thousand tress`);
+
 }
 function streetsReport(){
     streets.forEach(street=>street.classifyStreets());
